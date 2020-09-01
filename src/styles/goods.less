@@ -1,0 +1,531 @@
+@charset 'utf-8';
+/* 全部show区 */
+.lj-show,.spxx-show{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 路径区url */
+#lj{
+    height: 40px;
+
+    .lj-show{
+        height: 40px;
+
+        ul{
+            line-height: 40px;
+            font-size: 12px;
+
+            a{
+                margin-right: 5px;
+                color: #666666;
+
+                &:hover{
+                    color: black;
+                }
+            }
+
+            span{
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+/* spxx区 */
+.spxx-show{
+    min-height: 890px;
+
+    #xzfdj{
+        width: 450px;
+        height: 550px;
+        background: #ffffff;
+        float: left;
+
+        #fdj{
+            width: 450px;
+            height: 450px;
+            background: url(../images/fdj1-big.jpg) no-repeat;
+            position: relative;
+            background-size: 450px 450px;
+            float: left;
+        }
+
+        /* 下面小图左右按钮 */
+        #fdj-l{
+            margin-top: 14px;
+            display: block;
+            text-align: center;
+            line-height: 28px;
+            font-size: 20px;
+            width: 29px;
+            height: 29px;
+            background: #ffffff;
+            color: #CECECE;
+            border-radius: 50px;
+            border: 1px solid #CECECE;
+            float: left;
+
+            &:hover{
+                background: #F5F5F5;
+            }
+        }
+        #fdj-r{
+            margin-top: 14px;
+            display:block;
+            text-align: center;
+            line-height: 28px;
+            font-size: 20px;
+            width: 29px;
+            height: 29px;
+            background: #ffffff;
+            color: #CECECE;
+            border-radius: 50px;
+            border: 1px solid #CECECE;
+            float: left;
+        
+            &:hover{
+                background: #F5F5F5;
+            }
+        }
+
+        /* 放大镜下面的小图 */
+        .tp-min{
+            width: 370px;
+            height: 70px;
+            background: #ffffff;
+            float: left;
+            margin-left: 9px;
+            margin-right: 9px;
+            overflow: hidden;
+            position: relative;
+
+            ul{
+                height: 68px;
+                position: absolute;
+
+                li{
+                    width: 72px;
+                    height: 68px;
+                    float: left;
+                    border: 1px solid #ffffff;
+                    background-size: 66px 60px;  
+                    background-repeat:no-repeat;
+                    background-position: 3px 4px;
+
+                    &:hover{
+                        border: 1px solid red;
+                    }
+
+                    a{
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        display: block;
+                        width: 72px;
+                        height: 66px;
+                        text-align: center;
+                        
+                        img{
+                            display: inline-block;
+                            width: 64px;
+                            height: 64px;   
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* 商品信息spxx右边的产品详情 */
+    #sjxx{
+        width: 700px;
+        height: 850px;
+        float: left;
+        margin-left: 50px;
+        position: relative;
+
+        #kaiguan{
+            position: absolute;
+            color: #CACACA;
+            display: block;
+            left: 670px;
+            font-size: 26px;
+            top: 55px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        p{
+            height: 40px;
+            width: 660px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            font-size: 14px;
+            
+            a{
+                font-size: 14px;
+                color: #CA141D;
+            }
+        }
+
+        /* 促销活动----------------------------------*/
+        #xiangqin{
+            width: 700px;
+            min-height: 177px;
+            background: #F5F5F5;
+            padding-left: 5px;
+
+            h3{
+                float: left;
+                font-size: 14px;
+                color: black;
+                margin-right: 10px;
+            }
+
+            /* 价格 */
+            .jiage{
+                width: 600px;
+                height: 50px;
+                line-height: 50px;
+                
+                span{
+                    color: #CA141D;
+                    font-size: 20px;
+                }
+            }
+
+            /* 促销 >>*/
+            .cuxiao{
+                width: 700px;
+                min-height: 120px;
+                position: relative;
+
+                #cxxq{
+                    width:625px;
+                    min-height: 120px;
+                    float: left;
+
+                    h4{
+                        display: block;
+                        padding: 0px 4px 0px 4px;
+                        border: 1px solid red;
+                        font-size: 14px;
+                        color: red;
+                        float: left;
+                        margin-right: 5px;
+                    }
+                    
+                    /* 赠品 */
+                    .zp{
+                        height: 10px;
+
+                        img{
+                            float: left;
+                            width: 23px;
+                            height: 23px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                        }
+                        span{
+                            float: left;
+                            margin-left: 5px;
+                            font-size: 14px;
+                            color: #888888;
+                        }
+                    }
+
+                    /* 一站式换新 */
+                    .qtzp{
+                        float: left;
+                        margin-bottom: 10px;
+
+                        span{
+                            float: left;
+                            font-size: 12px;
+                            line-height: 20px;
+                            margin-left: 3px;
+                        }
+                        #shoufang1{
+                            width: 0px;
+                            height: 0px;
+                            overflow: hidden;
+                        }
+                        #shoufang2{
+                            width: 0px;
+                            height: 0px;
+                            overflow: hidden;
+                        }
+                        #shoufang3{
+                            width: 0px;
+                            height: 0px;
+                            overflow: hidden;
+                        }
+                    }
+
+                    #zkcx{
+                        position: absolute;
+                        font-size: 12px;
+                        color: #888888;
+                        right: 42px;
+                        top: 100px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+
+        /* 服务------------------------------------ */
+        .fwsm{
+            width: 700px;
+            height: 90px;
+            margin-top: 10px;
+            padding-left: 5px;
+            float: left;
+
+            h3{
+                float: left;
+                line-height: 26px;
+                font-size: 14px;
+            }
+
+            .fwsm .didian{
+                width: 600px;
+                height: 60px;
+                float: left;
+                margin-bottom: 5px;
+                
+                a{
+                    color: black;
+                    font-size: 14px;
+                    padding: 5px;
+                    border: .5px solid #D6D6D6;
+                    margin-left: 15px;
+                    float: left;
+                }
+                span{
+                    float: left;
+                    font-size: 12px;
+                    margin-left: 10px;
+                    line-height: 29px;
+
+                    i{
+                        color: #D96266;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    margin-left: 15px;
+                    float: left;
+                }
+            }
+
+            .spbm>span{
+                font-size: 12px;
+                margin-left: 15px;
+            }
+        }
+
+        /* 其他信息 */
+        .qtxx{
+            width: 700px;
+            height: 450px;
+            float: left;
+            border-top: 1px solid  #DDDDDD;
+            padding-left: 5px;
+
+            h3{
+                line-height: 50px;
+                float: left;
+            }
+
+            .ysxz{
+                width: 500px;
+                height: 70px;
+                margin-top: 20px;
+
+                .sjys{
+                    a{
+                        display: block;
+                        float: left;
+                        width: 100px;
+                        height: 40px;
+                        border: 1px solid #DDDDDD;
+                        margin: 10px;
+
+                        img{
+                            width: 40px;
+                            margin-left: 5px;
+                            height: 40px;
+                            float: left;
+                        }
+                        span{
+                            line-height: 40px;
+                            color: black;
+                            font-size: 14px;
+                        }
+                    }
+                    #lhs{
+                        border: 1px solid #CA141D;
+                    }
+                }
+            }
+
+            /* 选择版本 */
+            .xzbb{
+                width: 500px;
+                height: 55px;
+
+                a{
+                    display: block;
+                    float: left;
+                    width: 80px;
+                    height: 30px;
+                    border: 1px solid #CA141D;
+                    margin: 10px;
+                    text-align: center;
+                    line-height: 30px;
+                    color: #3A3A3A;
+                }
+            }
+
+            /* 选择容量 */
+            .xzrl a{
+                display: block;
+                float: left;
+                width: 100px;
+                height: 30px;
+                border: 1px solid #DDDDDD;
+                margin: 10px;
+                text-align: center;
+                line-height: 30px;
+                color: #3A3A3A;
+
+                &:nth-child(3){
+                    border: 1px solid #CA141D;
+                }
+            }
+
+            /* 套餐选择 */
+            .tcxz{
+                float: left;
+                width: 500px;
+                height: 50px;
+
+                a{
+                    display: block;
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                    border: 1px solid #CA141D;
+                    margin: 10px;
+                    text-align: center;
+                    line-height: 30px;
+                    color: #3A3A3A;
+                }
+            }
+
+            /* 保障服务 */
+            .bzfw{
+                float: left;
+                width: 600px;
+                height: 50px;
+
+                a{
+                    display: block;
+                    float: left;
+                    height: 30px;
+                    border: 1px solid #CA141D;
+                    margin: 10px;
+                    font-size: 12px;
+                    line-height: 30px;
+                    color: #3A3A3A;
+                    padding-left: 5px;
+
+                    span{
+                        float: right;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            /* 已选择商品 */
+            .xzxx{
+                width: 500px;
+                height: 60px;
+
+                span{
+                    font-size: 14px;
+                    color: #CA141D;
+                    float: left;
+                    line-height: 50px;
+                    margin-left: 10px;
+                }
+            }
+
+            /* 添加到购物车 */
+            .gwc{
+                width: 500px;
+                height: 60px;
+                float: left;
+
+                #gsCount{
+                    display: block;
+                    width: 60px;
+                    height: 40px;
+                    float: left;
+
+                    #Count{
+                        width: 38px;
+                        height: 38px;
+                        text-align: center;
+                        float: left;
+                        border: 1px solid #A4A4A4;
+                    }
+                    #add{
+                        width: 18px;
+                        height: 19px;
+                        float: right;
+                        border: 1px solid #A4A4A4;
+                        text-align: center;
+                        border-bottom: 0;
+                    }
+                    #reduce{
+                        width: 18px;
+                        height: 18px;
+                        float: right;
+                        border: 1px solid #A4A4A4;
+                        text-align: center;
+                    }
+                    .no-l{
+                        border-left: 0;
+                    }
+                }
+                /* 加入购物车按钮 */
+                #addgwc{
+                    float: left;
+                    width: 160px;
+                    text-align: center;
+                    line-height: 40px;
+                    height: 40px;
+                    background: #FC600C;
+                    color: #ffffff;
+                    font-size: 20px;
+                    border: 0;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+#fansila{
+    z-index: 999;
+}
+
+
+
+
+
