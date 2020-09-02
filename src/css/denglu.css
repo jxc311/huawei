@@ -1,0 +1,216 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+#container #head {
+  width: 100%;
+  height: 38.39px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.05);
+}
+#container #head > #content {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+#container #head > #content > #img {
+  width: 108px;
+  height: 19.19px;
+  margin-top: 9.6px;
+  float: left;
+  background: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_58/logos/HUAWEI.svg) no-repeat;
+}
+#container #head > #content > #word {
+  width: 77.8px;
+  height: 100%;
+  float: left;
+}
+#container #head > #content > #word > #line {
+  float: left;
+  width: 1px;
+  height: 16px;
+  margin: 11.2px 12.8px;
+  background: rgba(0, 0, 0, 0.2);
+}
+#container #head > #content > #word > #wenzi {
+  font-size: 12.8px;
+  margin-top: 11.2px;
+  color: #191919;
+  font-weight: 700;
+  float: left;
+}
+#container #title {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+#container #title > span {
+  display: block;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+#container #loin {
+  width: 100%;
+  height: 421px;
+  margin-bottom: 30px;
+}
+#container #loin > #core {
+  width: 843px;
+  margin: 0 auto;
+}
+#container #loin > #core > #code {
+  width: 360px;
+  height: 274px;
+  float: left;
+}
+#container #loin > #core > #code > div {
+  width: 200px;
+  height: 200px;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+#container #loin > #core > #code > span {
+  font-size: 12px;
+  color: #838383;
+  display: inline-block;
+  margin-top: 50px;
+}
+#container #loin > #core > span {
+  width: 1px;
+  height: 300px;
+  margin: 0 60px;
+  background: rgba(0, 0, 0, 0.1);
+  float: left;
+}
+#container #loin > #core > form {
+  width: 360px;
+  height: 249px;
+  float: left;
+  position: relative;
+}
+#container #loin > #core > form > input {
+  display: inline-block;
+  width: 358px;
+  height: 48px;
+  padding: 0 16px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #191919;
+}
+#container #loin > #core > form > #zhanghao {
+  margin-bottom: 20px;
+}
+#container #loin > #core > form > svg {
+  position: absolute;
+  top: 84px;
+  right: 12px;
+}
+#container #loin > #core > form > svg:hover {
+  cursor: pointer;
+}
+#container #loin > #core > form > a {
+  display: inline-block;
+  font-size: 16px;
+  color: #007dff;
+  margin-top: 15px;
+  text-decoration: none;
+}
+#container #loin > #core > form > #denglu {
+  width: 100%;
+  height: 47px;
+  background: #ca141d;
+  margin-top: 40px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+#container #loin > #core > form > #denglu > div {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+#container #loin > #core > #zhuce {
+  width: 360px;
+  height: 60px;
+  float: left;
+  padding-top: 40px;
+}
+#container #loin > #core > #zhuce > div {
+  text-align: center;
+}
+#container #loin > #core > #zhuce > div > a {
+  text-decoration: none;
+  color: #007dff;
+  padding: 0 15px;
+  font-size: 16px;
+  border-right: 1px solid #aaa;
+}
+#container #loin > #core > #zhuce > div > a:nth-child(3) {
+  border: none;
+}
+#container #loin > #core #tubiao {
+  width: 360px;
+  height: 112px;
+  float: right;
+  padding: 30px 0 40px;
+}
+#container #loin > #core #tubiao > div {
+  text-align: center;
+}
+#container #loin > #core #tubiao > div > a {
+  margin: 0 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #aaa;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+}
+#container #stern {
+  width: 100%;
+  height: 88px;
+  background: rgba(0, 0, 0, 0.05);
+}
+#container #stern > #jiewei {
+  text-align: center;
+  line-height: 88px;
+  width: 550px;
+  height: 42px;
+  margin: 0 auto;
+  font-size: 11.2px;
+}
+#container #stern > #jiewei > p {
+  width: 100%;
+  height: 20px;
+}
+#container #stern > #jiewei > #p1 > a {
+  font-size: 12px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #000;
+  border-right: 1px solid #aaa;
+}
+#container #stern > #jiewei > #p1 > a:nth-child(4) {
+  border: none;
+}
+#container #stern > #jiewei > #p2 {
+  margin-top: 10px;
+  color: #666;
+}

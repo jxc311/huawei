@@ -46,10 +46,41 @@
         #fdj{
             width: 450px;
             height: 450px;
-            background: url(../images/fdj1-big.jpg) no-repeat;
             position: relative;
-            background-size: 450px 450px;
             float: left;
+            &>.movebox{
+                border: 1px solid #ccc;
+                background-color: orange;
+                opacity: .2;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        // 放大镜中的图片
+        .big{
+            width:450px;
+            height:450px;
+            position: absolute;
+            top:5px;
+            left:450px;
+            z-index: 1;
+            display: none;
+            overflow: hidden;
+            .bigpicture {
+                width:650px;
+                height:650px;
+                position: absolute;
+                top:5px;
+                left:450px;
+            }
+        }
+        .hide {
+            display: none;
+        }
+        
+        .show {
+            display: block;
         }
 
         /* 下面小图左右按钮 */
@@ -125,12 +156,6 @@
                         width: 72px;
                         height: 66px;
                         text-align: center;
-                        
-                        img{
-                            display: inline-block;
-                            width: 64px;
-                            height: 64px;   
-                        }
                     }
                 }
             }
@@ -521,11 +546,61 @@
     }
 }
 
-#fansila{
-    z-index: 999;
+/* 商品参数 */
+.parameter-wrap{
+    width: 1200px;
+    margin: 0 auto;
+
+    .product-parameter-main{
+        color: #333;
+
+        h2{
+            font-size: 22px;
+            color: #333;
+            font-weight: 600;
+            width: 100px;
+            float: left;
+            position: relative;
+            top: -1px;
+            padding: 24px 0 0;
+        }
+
+        ul{
+            padding: 24px 0 0;
+            position: relative;
+            font-size: 16px;
+            line-height: 24px;
+            float: right;
+            width: 1046px;
+
+            li{
+                margin-bottom: 24px;
+                min-height: 145px;
+
+                label {
+                    float: left;
+                    width: 128px;
+                    margin-right: 54px;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                    cursor: default;
+                }
+                span {
+                    float: left;
+                    width: 320px;
+                    margin-right: 96px;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                }
+                .parameter-detail {
+                    float: left;
+                    width: 438px;
+                    color: #999;
+                    font-size: 14px;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                }
+            }
+        }
+    }
 }
-
-
-
-
-

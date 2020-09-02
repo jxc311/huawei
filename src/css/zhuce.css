@@ -1,0 +1,341 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+#container #head {
+  width: 100%;
+  height: 38.39px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.05);
+}
+#container #head > #content {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+#container #head > #content > #img {
+  width: 108px;
+  height: 19.19px;
+  margin-top: 9.6px;
+  float: left;
+  background: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_58/logos/HUAWEI.svg) no-repeat;
+}
+#container #head > #content > #word {
+  width: 77.8px;
+  height: 100%;
+  float: left;
+}
+#container #head > #content > #word > #wenzi {
+  font-size: 12.8px;
+  margin-top: 11.2px;
+  color: #191919;
+  font-weight: 700;
+  float: left;
+}
+#container > #center {
+  width: 100%;
+  height: 700px;
+}
+#container > #center > #zhuti {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+#container > #center > #zhuti > #zhuce {
+  width: 192px;
+  height: 83px;
+  float: left;
+  margin-top: 32px;
+}
+#container > #center > #zhuti > #zhuce > div {
+  width: 218px;
+  height: 42px;
+  padding: 12.8px;
+  border-radius: 6.4px;
+  color: #191919;
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 12px;
+  cursor: pointer;
+}
+#container > #center > #zhuti > #zhuce > div > span {
+  margin: 0 12.8px;
+}
+#container > #center > #zhuti > #subject {
+  width: 768px;
+  height: 632.86px;
+  padding-top: 48px;
+  padding-left: 208px;
+  margin: 0 auto;
+}
+#container > #center > #zhuti > #subject > #head {
+  width: 352px;
+  height: 57.39px;
+  margin: 8px 0 48px;
+  text-align: center;
+  background: #fff;
+}
+#container > #center > #zhuti > #subject > #head > p {
+  font-size: 25px;
+  color: #000;
+}
+#container > #center > #zhuti > #subject > #head > span {
+  font-size: 14px;
+  color: #191919;
+}
+#container > #center > #zhuti > #subject > #head > a {
+  font-size: 14px;
+  color: #007dff;
+  text-decoration: none;
+}
+#container > #center > #zhuti > #subject > div {
+  width: 354px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border-radius: 6.4px;
+  font-size: 12px;
+}
+#container > #center > #zhuti > #subject > div > div {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  padding: 0 12.8px;
+  color: #191919;
+}
+#container > #center > #zhuti > #subject > div > div > span {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+#container > #center > #zhuti > #subject > #country {
+  position: relative;
+}
+#container > #center > #zhuti > #subject > #country > div:nth-child(2) {
+  position: absolute;
+  right: 12.8px;
+  cursor: pointer;
+}
+#container > #center > #zhuti > #subject > #num > div {
+  border-right: 1px solid #aaa;
+}
+#container > #center > #zhuti > #subject > #num > input {
+  width: 243px;
+  height: 38px;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #191919;
+}
+#container > #center > #zhuti > #subject > #node > input {
+  width: 260px;
+  height: 38px;
+  padding: 0 12.8px;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #191919;
+}
+#container > #center > #zhuti > #subject > #node > div {
+  cursor: pointer;
+  color: #007dff;
+}
+#container > #center > #zhuti > #subject > #password > input,
+#container > #center > #zhuti > #subject #quedin > input {
+  width: 330px;
+  height: 38px;
+  padding: 0 12.8px;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #191919;
+}
+#container > #center > #zhuti > #subject > #password > svg,
+#container > #center > #zhuti > #subject #quedin > svg {
+  cursor: pointer;
+}
+#container > #center > #zhuti > #subject > #birthday {
+  position: relative;
+}
+#container > #center > #zhuti > #subject > #birthday > div:nth-child(2) {
+  position: absolute;
+  right: 12.8px;
+  cursor: pointer;
+}
+#container > #center > #zhuti > #subject > #hwid {
+  width: 352px;
+  height: 40px;
+  margin-top: 40px;
+  text-align: center;
+  background: #fff;
+}
+#container > #center > #zhuti > #subject > #hwid > button {
+  width: 248px;
+  height: 40px;
+  padding: 0 12.8px;
+  border-radius: 6.4px;
+  outline: none;
+  background: #007dff;
+  border: none;
+  color: #fff;
+  cursor: default;
+  text-align: center;
+  opacity: 0.7;
+}
+#container > #center > #zhuti > #emali {
+  width: 768px;
+  height: 632.86px;
+  padding-top: 48px;
+  padding-left: 208px;
+  margin: 0 auto;
+  display: none;
+}
+#container > #center > #zhuti > #emali > #head {
+  width: 352px;
+  height: 57.39px;
+  margin: 8px 0 48px;
+  text-align: center;
+  background: #fff;
+}
+#container > #center > #zhuti > #emali > #head > p {
+  font-size: 25px;
+  color: #000;
+}
+#container > #center > #zhuti > #emali > #head > span {
+  font-size: 14px;
+  color: #191919;
+}
+#container > #center > #zhuti > #emali > #head > a {
+  font-size: 14px;
+  color: #007dff;
+  text-decoration: none;
+}
+#container > #center > #zhuti > #emali > div {
+  width: 354px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border-radius: 6.4px;
+  font-size: 12px;
+}
+#container > #center > #zhuti > #emali > div > div {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  padding: 0 12.8px;
+  color: #191919;
+}
+#container > #center > #zhuti > #emali > div > div > span {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+#container > #center > #zhuti > #emali > #country {
+  position: relative;
+}
+#container > #center > #zhuti > #emali > #country > div:nth-child(2) {
+  position: absolute;
+  right: 12.8px;
+  cursor: pointer;
+}
+#container > #center > #zhuti > #emali > #num > input {
+  width: 243px;
+  height: 38px;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #191919;
+  padding: 0 12.8px;
+}
+#container > #center > #zhuti > #emali > #node > input {
+  width: 260px;
+  height: 38px;
+  padding: 0 12.8px;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #191919;
+}
+#container > #center > #zhuti > #emali > #node > div {
+  cursor: pointer;
+  color: #007dff;
+}
+#container > #center > #zhuti > #emali > #password > input,
+#container > #center > #zhuti > #emali #quedin > input {
+  width: 330px;
+  height: 38px;
+  padding: 0 12.8px;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #191919;
+}
+#container > #center > #zhuti > #emali > #password > svg,
+#container > #center > #zhuti > #emali #quedin > svg {
+  cursor: pointer;
+}
+#container > #center > #zhuti > #emali > #birthday {
+  position: relative;
+}
+#container > #center > #zhuti > #emali > #birthday > div:nth-child(2) {
+  position: absolute;
+  right: 12.8px;
+  cursor: pointer;
+}
+#container > #center > #zhuti > #emali > #hwid {
+  width: 352px;
+  height: 40px;
+  margin-top: 40px;
+  text-align: center;
+  background: #fff;
+}
+#container > #center > #zhuti > #emali > #hwid > button {
+  width: 248px;
+  height: 40px;
+  padding: 0 12.8px;
+  border-radius: 6.4px;
+  outline: none;
+  background: #007dff;
+  border: none;
+  color: #fff;
+  cursor: default;
+  text-align: center;
+  opacity: 0.7;
+}
+#container #stern {
+  width: 100%;
+  height: 88px;
+  background: rgba(0, 0, 0, 0.05);
+}
+#container #stern > #jiewei {
+  text-align: center;
+  line-height: 88px;
+  width: 550px;
+  height: 42px;
+  margin: 0 auto;
+  font-size: 11.2px;
+}
+#container #stern > #jiewei > p {
+  width: 100%;
+  height: 20px;
+}
+#container #stern > #jiewei > #p1 > a {
+  font-size: 12px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #000;
+  border-right: 1px solid #aaa;
+}
+#container #stern > #jiewei > #p1 > a:nth-child(4) {
+  border: none;
+}
+#container #stern > #jiewei > #p2 {
+  margin-top: 10px;
+  color: #666;
+}

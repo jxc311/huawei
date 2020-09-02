@@ -1,0 +1,391 @@
+@charset 'utf-8';
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+#container{
+     //头部
+     #head{
+        width:100%;
+        height:38.39px;
+        margin:0 auto;
+        background:rgba(0,0,0,0.05);
+        &>#content{
+            width:960px;
+            height:100%;
+            margin:0 auto;
+            &>#img{
+                width:108px;
+                height:19.19px;
+                margin-top:9.6px;
+                float: left;
+                background:url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_58/logos/HUAWEI.svg)no-repeat;
+            }
+            &>#word{
+                width:77.8px;
+                height:100%;
+                float: left;
+                &>#wenzi{
+                    font-size:12.8px;
+                    margin-top:11.2px;  
+                    color:#191919;
+                    font-weight:700;
+                    float: left;
+                }
+            }
+        }
+    }
+   // 中间部分...................。>
+    &>#center{
+        width:100%;
+        height:700px;
+        &>#zhuti{
+            width:960px;
+            height:100%;
+            margin:0 auto;
+            &>#zhuce{
+                width:192px;
+                height:83px;
+                float:left;
+                margin-top:32px;
+                &>div{
+                    width:218px;
+                    height:42px;
+                    padding:12.8px;
+                    border-radius:6.4px;
+                    color:#191919;
+                    background:rgba(0, 0, 0, .05);
+                    font-size:12px;
+                    cursor: pointer;
+                    &>span{
+                        margin:0 12.8px;
+                    }
+                }
+            }
+
+            //手机号注册主体
+            &>#subject{
+                width:768px;
+                height:632.86px;
+                padding-top:48px;
+                padding-left:208px;
+                margin:0 auto;
+                // display:none;
+                // 注册标题
+                &>#head{
+                    width:352px;
+                    height:57.39px;
+                    margin:8px 0 48px;
+                    text-align:center;
+                    background:#fff;
+                    &>p{
+                        font-size:25px;
+                        color:#000;
+                    }
+                    &>span{
+                        font-size:14px;
+                        color:#191919;
+                    }
+                    &>a{
+                        font-size:14px;
+                        color:#007dff;
+                        text-decoration:none;
+                    }
+                }
+                &>div{
+                    width:354px;
+                    height:40px;
+                    background:rgba(0, 0, 0, .05);
+                    margin-bottom:20px;
+                    border-radius:6.4px;
+                    font-size:12px;
+                    &>div{
+                        display: inline-block;
+                        text-align: center;
+                        line-height:40px;
+                        padding:0 12.8px;
+                        color:#191919;
+                        &>span{
+                            display: inline-block;
+                            transform:rotate(90deg);
+                        }
+                    }
+                }
+                //国家地区
+                &>#country{
+                   position: relative;
+                   &>div:nth-child(2){
+                       position: absolute;
+                       right:12.8px;
+                       cursor:pointer;
+                   }
+                }
+                // 输入手机号
+                &>#num{
+                    &>div{
+                        border-right:1px solid #aaa;
+                    }
+                    &>input{
+                        width:243px;
+                        height:38px;
+                        outline:none;
+                        background:rgba(0, 0, 0, 0);
+                        border:none;
+                        color:#191919;
+                    }
+                }
+                // 短信验证码
+                &>#node{
+                    &>input{
+                        width:260px;
+                        height:38px;
+                        padding:0 12.8px;
+                        outline:none;
+                        background:rgba(0, 0, 0, 0);
+                        border:none;
+                        color:#191919;
+                    }
+                    &>div{
+                        cursor: pointer;
+                        color:#007dff;
+                    }
+                }
+
+                // 密码
+                &>#password,#quedin{
+                    &>input{
+                        width:330px;
+                        height:38px;
+                        padding:0 12.8px;
+                        outline:none;
+                        background:rgba(0, 0, 0, 0);
+                        border:none;
+                        color:#191919;
+                    }
+                    &>svg{
+                        cursor: pointer;
+                    }
+                }
+                // 出生日期
+                &>#birthday{
+                    position: relative;
+                    &>div:nth-child(2){
+                        position: absolute;
+                        right:12.8px;
+                        cursor:pointer;
+                    }
+                 }
+
+                //  注册按钮
+                &>#hwid{
+                    width:352px;
+                    height:40px;
+                    margin-top:40px;
+                    text-align:center;
+                    background:#fff;
+                    &>button{
+                        width:248px;
+                        height:40px;
+                        padding:0 12.8px;
+                        border-radius:6.4px;
+                        outline:none;
+                        background:#007dff;
+                        border:none;
+                        color:#fff;
+                        cursor: default;
+                        text-align:center;
+                        opacity: .7;
+                    }
+                }
+
+
+            }
+            
+
+            // 邮箱注册界面
+            &>#emali{
+                width:768px;
+                height:632.86px;
+                padding-top:48px;
+                padding-left:208px;
+                margin:0 auto;
+                display:none;
+                // 注册标题
+                &>#head{
+                    width:352px;
+                    height:57.39px;
+                    margin:8px 0 48px;
+                    text-align:center;
+                    background:#fff;
+                    &>p{
+                        font-size:25px;
+                        color:#000;
+                    }
+                    &>span{
+                        font-size:14px;
+                        color:#191919;
+                    }
+                    &>a{
+                        font-size:14px;
+                        color:#007dff;
+                        text-decoration:none;
+                    }
+                }
+                &>div{
+                    width:354px;
+                    height:40px;
+                    background:rgba(0, 0, 0, .05);
+                    margin-bottom:20px;
+                    border-radius:6.4px;
+                    font-size:12px;
+                    &>div{
+                        display: inline-block;
+                        text-align: center;
+                        line-height:40px;
+                        padding:0 12.8px;
+                        color:#191919;
+                        &>span{
+                            display: inline-block;
+                            transform:rotate(90deg);
+                        }
+                    }
+                }
+                //国家地区
+                &>#country{
+                   position: relative;
+                   &>div:nth-child(2){
+                       position: absolute;
+                       right:12.8px;
+                       cursor:pointer;
+                   }
+                }
+                // 输入邮件地址
+                &>#num{
+                    &>input{
+                        width:243px;
+                        height:38px;
+                        outline:none;
+                        background:rgba(0, 0, 0, 0);
+                        border:none;
+                        color:#191919;
+                        padding:0 12.8px;
+                    }
+                }
+                // 短信验证码
+                &>#node{
+                    &>input{
+                        width:260px;
+                        height:38px;
+                        padding:0 12.8px;
+                        outline:none;
+                        background:rgba(0, 0, 0, 0);
+                        border:none;
+                        color:#191919;
+                    }
+                    &>div{
+                        cursor: pointer;
+                        color:#007dff;
+                    }
+                }
+
+                // 密码
+                &>#password,#quedin{
+                    &>input{
+                        width:330px;
+                        height:38px;
+                        padding:0 12.8px;
+                        outline:none;
+                        background:rgba(0, 0, 0, 0);
+                        border:none;
+                        color:#191919;
+                    }
+                    &>svg{
+                        cursor: pointer;
+                    }
+                }
+                // 出生日期
+                &>#birthday{
+                    position: relative;
+                    &>div:nth-child(2){
+                        position: absolute;
+                        right:12.8px;
+                        cursor:pointer;
+                    }
+                 }
+
+                //  注册按钮
+                &>#hwid{
+                    width:352px;
+                    height:40px;
+                    margin-top:40px;
+                    text-align:center;
+                    background:#fff;
+                    &>button{
+                        width:248px;
+                        height:40px;
+                        padding:0 12.8px;
+                        border-radius:6.4px;
+                        outline:none;
+                        background:#007dff;
+                        border:none;
+                        color:#fff;
+                        cursor: default;
+                        text-align:center;
+                        opacity: .7;
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+
+
+
+
+    // 尾部......................>
+    #stern{
+        width:100%;
+        height:88px;
+        background:rgba(0, 0, 0, 0.05);
+        &>#jiewei{
+            text-align:center;
+            line-height: 88px;
+            width:550px;
+            height:42px;
+            margin:0 auto;
+            font-size:11.2px;
+            &>p{
+                width:100%;
+                height:20px;
+            }
+            &>#p1>a{
+               font-size:12px;
+               padding:0 14px;
+               text-decoration:none;
+               color:#000;
+               border-right:1px solid #aaa;
+            }
+            &>#p1>a:nth-child(4){
+                border:none;
+            }
+            &>#p2{
+                margin-top:10px;
+                color:#666
+            }
+        }
+    }
+}

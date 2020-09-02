@@ -18,3 +18,29 @@ $("img.lazy").lazyload({
     // failurelimit: 10 // 图片排序混乱时
     // failurelimit,值为数字.lazyload默认在找到第一张不在可见区域里的图片时则不再继续加载,但当HTML容器混乱的时候可能出现可见区域内图片并没加载出来的情况,failurelimit意在加载N张可见区域外的图片,以避免出现这个问题.
 });
+
+
+// 数据渲染
+(function() {
+    $.ajax({
+        type: "get",
+        url: "../../interface/getproduct.php",
+        dataType: "json",
+        success: function(res) {
+            let temp = '';
+            res.forEach((elm, i) => {
+                let picture = JSON.parse(elm.img);
+                // console.log(picture);
+                temp += `<li>
+                <a href="./goods.html?id=${elm.id}">
+                    <p class="img"><img src="..${picture[0].src}" alt=""></p>
+                    <div class="title">${elm.title}</div>
+                    <p class="desc">享12期免息</p>
+                    <p class="price">¥${elm.price}</p>
+                </a>
+            </li>`;
+            });
+            $('#list').append(temp);
+        }
+    });
+})();

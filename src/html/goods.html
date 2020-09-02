@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>商品详情页</title>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/goods.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/goods.js" type="module"></script>
+    <script src="../js/library/magnifying.js" type="module"></script>
 </head>
 
 <body>
@@ -90,9 +92,7 @@
                 <span>></span>
                 <a href="#">HUAWEI Mate系列</a>
                 <span>></span>
-                <span id="urlname">HUAWEI Mate 30 5G 全网通 8GB+128GB 麒麟990 4000万超感光徕卡三摄（亮黑色）</span>
-
-
+                <span id="urlname"></span>
             </ul>
         </div>
     </div>
@@ -101,33 +101,28 @@
         <div class="spxx-show">
             <div id="xzfdj">
                 <div id="fdj">
+                    <div class="movebox hide"></div>
+                </div>
+                <div class="big hide">
+                    <div class="bigpicture"></div>
                 </div>
                 <a href="#" id="fdj-l">
                     < </a>
                         <div class="tp-min">
                             <ul id="qqq">
-                                <li>
+                                <li id="li1">
                                     <a href="#"></a>
                                 </li>
-                                <li>
+                                <li id="li2">
                                     <a href="#"></a>
                                 </li>
-                                <li>
+                                <li id="li3">
                                     <a href="#"></a>
                                 </li>
-                                <li>
+                                <li id="li4">
                                     <a href="#"></a>
                                 </li>
-                                <li>
-                                    <a href="#"></a>
-                                </li>
-                                <li>
-                                    <a href="#"></a>
-                                </li>
-                                <li>
-                                    <a href="#"></a>
-                                </li>
-                                <li>
+                                <li id="li5">
                                     <a href="#"></a>
                                 </li>
                             </ul>
@@ -135,13 +130,13 @@
                         <a href="#" id="fdj-r"> > </a>
             </div>
             <div id="sjxx">
-                <h2 id="spname">HUAWEI Mate 30 5G 全网通 8GB+128GB 麒麟990 4000万超感光徕卡三摄（亮黑色）</h2>
+                <h2 id="spname"></h2>
                 <p id="youhui"><a href="#">①享12期免息 ②整点限量赠好礼 ③限量赠父母双人体检套餐券 ④以旧换新立省100元，下拉至详情页点击参与 ⑤老用户购机赠半年延保 点此进入》》》</a> 麒麟990 5G旗舰SoC芯片，支持双模SA/NSA；超感光徕卡三摄；40W有线与27W无线双超级快充；屏内指纹识别</p>
                 <a href="#" id="kaiguan">V</a>
                 <div id="xiangqin">
                     <div class="jiage">
                         <h3>价格</h3>
-                        <span>￥4499.00</span>
+                        <span id="yuan"></span>
                     </div>
                     <div class="cuxiao">
                         <h3>促销</h3>
@@ -190,9 +185,9 @@
                     <div class="ysxz">
                         <h3>颜色选择</h3>
                         <div class="sjys">
-                            <a href="#1" id="lhs"><img src="../images/fdj1.jpg" alt=""><span>亮黑色</span></a>
-                            <a href="#1" id="xhy"><img src="../images/fdj2.png" alt=""><span>星河银</span></a>
-                            <a href="#1" id="dxc"><img src="../images/fdj3.png" alt=""><span>丹霞橙</span></a>
+                            <a href="#1" id="lhs"><img src="../images/fdj1-1.jpg" alt=""><span>亮黑色</span></a>
+                            <a href="#1" id="xhy"><img src="../images/fdj2-1.jpg" alt=""><span>星河银</span></a>
+                            <a href="#1" id="dxc"><img src="../images/fdj3-1.png" alt=""><span>丹霞橙</span></a>
                         </div>
                     </div>
                     <div class="xzbb">
@@ -224,8 +219,8 @@
                         <h3>已选择商品</h3>
                         <span id="xznr"></span>
                     </div>
-                    <div class="gwc">
-                        <div id="gsCount">
+                    <div class="gwc" id="gwcID">
+                        <!-- <div id="gsCount">
                             <input type="text" name="" id="Count" value="1">
                             <div id="add" class="no-l">
                                 <a href="#1">+</a>
@@ -235,12 +230,48 @@
                             </div>
 
                         </div>
-                        <a href="" id="addgwc">加入购物车</a>
+                        <a href="" id="addgwc">加入购物车</a> -->
                     </div>
                 </div>
 
             </div>
         </div>
+    </div>
+    <!-- 商品参数 -->
+    <div id="parameter" class="parameter-wrap">
+        <!-- <div class="product-parameter-main">
+            <h2>主要参数</h2>
+            <ul>
+                <li><label>传播名</label><span>HUAWEI P40 Pro+</span></li>
+                <li><label>后置摄像头</label><span>超感知徕卡五摄：5000万像素超感知摄像头（广角， f/1.9光圈，OIS光学防抖） + 4000万像素电影摄像头（超广角，f/1.8光圈） +  800万像素超级变焦摄像头（10倍光学变焦，f/4.4光圈，OIS光学防抖） + 800万像素长焦摄像头（3倍光学变焦，f/2.4光圈，OIS光学防抖） + 3D深感摄像头</span>
+                    <div class="parameter-detail">备注：不同模式的照片和视频的像素可能有差异，请以实际为准。</div>
+                </li>
+                <li><label>电池容量</label><span>4200mAh（典型值）</span>
+                    <div class="parameter-detail">备注：电池额定容量为4100mAh。</div>
+                </li>
+                <li><label>前置摄像头</label><span>3200万像素摄像头（f/2.2光圈，自动对焦） + 景深摄像头</span>
+                    <div class="parameter-detail">备注：景深摄像头同时支持红外解锁功能，不同拍照模式的照片像素可能有差异，请以实际为准。</div>
+                </li>
+                <li><label>上市时间</label><span>2020年6月</span></li>
+                <li><label>屏幕尺寸</label><span>6.58英寸</span>
+                    <div class="parameter-detail">备注：显示屏采用圆角设计，按照标准矩形测量时，屏幕的对角线长度是6.58英寸（实际可视区域略小）。</div>
+                </li>
+                <li><label>屏幕色彩</label><span>1670万色，DCI-P3广色域</span></li>
+                <li><label>运行内存（RAM）</label><span>8GB</span>
+                    <div class="parameter-detail">备注：可使用的内存容量小于此值，因为手机软件占用的空间。</div>
+                </li>
+                <li><label>机身内存（ROM）</label><span>256GB</span>
+                    <div class="parameter-detail">备注：可使用的内存容量小于此值，因为手机软件占用的空间。</div>
+                </li>
+                <li><label>最大支持扩展</label><span>256GB NM存储卡（非标配，需另行购买）</span></li>
+                <li><label>分辨率</label><span>2640 × 1200 像素</span>
+                    <div class="parameter-detail">备注：该分辨率对应标准矩形，实际屏幕有效像素略少。</div>
+                </li>
+                <li><label>CPU型号</label><span>HUAWEI Kirin 990 5G(麒麟990 5G)</span></li>
+                <li><label>CPU核数</label><span>八核</span></li>
+                <li><label>双卡</label><span>双卡双待</span></li>
+            </ul>
+        </div> -->
     </div>
 
     <!-- bottom -->
@@ -451,221 +482,3 @@
 </body>
 
 </html>
-<script src="js/qqq.js"></script>
-<script>
-    window.onload = function() {
-        let oBox = $('fdj');
-        let aCount = $('Count');
-        let add = $('add');
-        let reduce = $('reduce');
-        add.onclick = function() {
-            aCount.value = parseInt(aCount.value) + 1;
-            console.log(aCount.value);
-        }
-        reduce.onclick = function() {
-            if (aCount.value > 1) {
-                aCount.value = parseInt(aCount.value) - 1;
-                console.log(aCount.value);
-            }
-
-        }
-
-        let m1 = new Mirror(oBox, {
-            img: "img/fdj0.png"
-        });
-        for (let i = 0; i < oLis.length; i++) {
-            let aaa = './img/fdj' + i + '.png';
-            oLis[i].style.backgroundImage = `url(${aaa})`;
-            oLis[i].onmouseover = (event) => {
-                $('fdj').style.backgroundImage = `url(${aaa})`;
-                $('fansila').style.backgroundImage = `url(${aaa})`;
-                // 阻止事件冒泡
-                let e = event || window.event;
-                e.stopPropagation();
-            }
-
-            oLis[i].onmousemove = (event) => {
-                // 阻止事件冒泡
-                let e = event || window.event;
-                e.stopPropagation();
-            }
-        }
-        $('xznr').innerHTML = sjColor + '/ 5G全网通 / ' + sjCapacity + '/ 官方标配';
-    }
-    let fdjl = $('fdj-l');
-    let fdjr = $('fdj-r');
-    let qqq = $('qqq');
-    var speed = 74;
-    let spname1 = ('spname');
-    let urlname1 = ('urlname');
-    fdjl.onclick = function() {
-
-        if (speed >= 0) {
-            speed = speed * 1;
-        } else {
-            speed = speed * -1;
-        }
-        if (qqq.offsetLeft < 0) {
-
-            qqq.style.left = qqq.offsetLeft + speed + 'px';
-        }
-    }
-    fdjr.onclick = function() {
-        if (speed >= 0) {
-            speed = speed * -1;
-        } else {
-            speed = speed;
-        }
-        if (qqq.offsetLeft > -222) {
-            qqq.style.left = qqq.offsetLeft + speed + 'px';
-        }
-
-    }
-    let oLis = qqq.children;
-    $('lhs').onclick = function() {
-        sjColor = '高亮黑';
-        urlname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + '麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-        spname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-        $('xznr').innerHTML = sjColor + '/ 5G全网通 / ' + sjCapacity + '/ 官方标配';
-        this.style.borderColor = '#CA141D';
-        $('xhy').style.borderColor = '#DDDDDD';
-        $('dxc').style.borderColor = '#DDDDDD';
-        for (let i = 0; i < oLis.length; i++) {
-            let aaa = './img/fdj' + i + '.png';
-            oLis[i].style.backgroundImage = `url(${aaa})`;
-            oLis[i].onmouseover = (event) => {
-                $('fdj').style.backgroundImage = `url(${aaa})`;
-                $('fansila').style.backgroundImage = `url(${aaa})`;
-                // 阻止事件冒泡
-                let e = event || window.event;
-                e.stopPropagation();
-            }
-
-            oLis[i].onmousemove = (event) => {
-                // 阻止事件冒泡
-                let e = event || window.event;
-                e.stopPropagation();
-            }
-        }
-    }
-    $('xhy').onclick = function() {
-        sjColor = '星河银';
-        urlname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-        spname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-        $('xznr').innerHTML = sjColor + '/ 5G全网通 / ' + sjCapacity + '/ 官方标配';
-        this.style.borderColor = '#CA141D';
-        $('dxc').style.borderColor = '#DDDDDD';
-        $('lhs').style.borderColor = '#DDDDDD';
-        for (let i = 0; i < oLis.length; i++) {
-            let aaa = './img/fdj1' + i + '.png';
-            oLis[i].style.backgroundImage = `url(${aaa})`;
-            oLis[i].onmouseover = (event) => {
-                $('fdj').style.backgroundImage = `url(${aaa})`;
-                $('fansila').style.backgroundImage = `url(${aaa})`;
-                // 阻止事件冒泡
-                let e = event || window.event;
-                e.stopPropagation();
-            }
-
-            oLis[i].onmousemove = (event) => {
-                // 阻止事件冒泡
-                let e = event || window.event;
-                e.stopPropagation();
-            }
-        }
-    }
-    $('dxc').onclick = function() {
-        sjColor = '丹霞红';
-        urlname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-        spname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-        $('xznr').innerHTML = sjColor + '/ 5G全网通 / ' + sjCapacity + '/ 官方标配';
-        this.style.borderColor = '#CA141D';
-        $('lhs').style.borderColor = '#DDDDDD';
-        $('xhy').style.borderColor = '#DDDDDD';
-        for (let i = 0; i < oLis.length; i++) {
-            let aaa = './img/fdj2' + i + '.png';
-            oLis[i].style.backgroundImage = `url(${aaa})`;
-            oLis[i].onmouseover = (event) => {
-                $('fdj').style.backgroundImage = `url(${aaa})`;
-                $('fansila').style.backgroundImage = `url(${aaa})`;
-                // 阻止事件冒泡
-                let e = event || window.event;
-                e.stopPropagation();
-            }
-
-            oLis[i].onmousemove = (event) => {
-                // 阻止事件冒泡
-                let e = event || window.event;
-                e.stopPropagation();
-            }
-        }
-    }
-
-    $('rl1').onclick = function() {
-        var sjCapacity = '8GB+256GB';
-        $('xznr').innerHTML = sjColor + '/ 5G全网通 / ' + sjCapacity + '/ 官方标配';
-        this.style.borderColor = '#CA141D';
-        $('rl2').style.borderColor = '#DDDDDD';
-        urlname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-        spname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-    }
-    $('rl2').onclick = function() {
-        var sjCapacity = '8GB+128GB';
-        $('xznr').innerHTML = sjColor + '/ 5G全网通 / ' + sjCapacity + '/ 官方标配';
-        this.style.borderColor = '#CA141D';
-        $('rl1').style.borderColor = '#DDDDDD';
-        urlname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-        spname.innerHTML = 'HUAWEI Mate 30 5G 全网通 ' + sjCapacity + ' 麒麟990 4000万超感光徕卡三摄（' + sjColor + '）';
-    }
-    let oYH = $('youhui');
-    let oKG = $('kaiguan');
-    oKG.onmouseover = (event) => {
-        oYH.style.height = '56px';
-        oKG.style.color = '#CACACA';
-        oKG.innerHTML = '∧';
-        // 阻止事件冒泡
-        let e = event || window.event;
-        e.stopPropagation();
-    }
-    oKG.onmouseout = (event) => {
-        oYH.style.height = '40px';
-        oKG.innerHTML = '∨';
-
-        // 阻止事件冒泡
-        let e = event || window.event;
-        e.stopPropagation();
-    }
-    var sjColor = '亮黑色';
-    var sjCapacity = '8GB+128GB';
-
-
-    //右边自动伸缩促销栏
-    $('cxxq').onmouseover = (event) => {
-        $('shoufang1').style.width = '485px';
-        $('shoufang1').style.height = '20px';
-        $('shoufang2').style.width = '485px';
-        $('shoufang2').style.height = '20px';
-        $('shoufang3').style.width = '485px';
-        $('shoufang3').style.height = '20px';
-        $('xiangqin').style.height = '242px';
-        $('zkcx').style.width = '0';
-        $('zkcx').style.height = '0';
-        // 阻止事件冒泡
-        let e = event || window.event;
-        e.stopPropagation();
-    }
-    $('cxxq').onmouseout = (event) => {
-        $('shoufang1').style.width = '0px';
-        $('shoufang1').style.height = '0px';
-        $('shoufang2').style.width = '0px';
-        $('shoufang2').style.height = '0px';
-        $('shoufang3').style.width = '0px';
-        $('shoufang3').style.height = '0px';
-        $('xiangqin').style.height = '177px';
-        $('zkcx').style.width = '60px';
-        $('zkcx').style.height = '20px';
-        // 阻止事件冒泡
-        let e = event || window.event;
-        e.stopPropagation();
-    }
-</script>

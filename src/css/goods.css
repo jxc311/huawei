@@ -43,10 +43,39 @@
 .spxx-show #xzfdj #fdj {
   width: 450px;
   height: 450px;
-  background: url(../images/fdj1-big.jpg) no-repeat;
   position: relative;
-  background-size: 450px 450px;
   float: left;
+}
+.spxx-show #xzfdj #fdj > .movebox {
+  border: 1px solid #ccc;
+  background-color: orange;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.spxx-show #xzfdj .big {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 5px;
+  left: 450px;
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+}
+.spxx-show #xzfdj .big .bigpicture {
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: 5px;
+  left: 450px;
+}
+.spxx-show #xzfdj .hide {
+  display: none;
+}
+.spxx-show #xzfdj .show {
+  display: block;
 }
 .spxx-show #xzfdj #fdj-l {
   margin-top: 14px;
@@ -115,11 +144,6 @@
   width: 72px;
   height: 66px;
   text-align: center;
-}
-.spxx-show #xzfdj .tp-min ul li a img {
-  display: inline-block;
-  width: 64px;
-  height: 64px;
 }
 .spxx-show #sjxx {
   width: 700px;
@@ -459,6 +483,56 @@
   border: 0;
   margin-left: 15px;
 }
-#fansila {
-  z-index: 999;
+/* 商品参数 */
+.parameter-wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.parameter-wrap .product-parameter-main {
+  color: #333;
+}
+.parameter-wrap .product-parameter-main h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+  width: 100px;
+  float: left;
+  position: relative;
+  top: -1px;
+  padding: 24px 0 0;
+}
+.parameter-wrap .product-parameter-main ul {
+  padding: 24px 0 0;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  float: right;
+  width: 1046px;
+}
+.parameter-wrap .product-parameter-main ul li {
+  margin-bottom: 24px;
+  min-height: 145px;
+}
+.parameter-wrap .product-parameter-main ul li label {
+  float: left;
+  width: 128px;
+  margin-right: 54px;
+  word-wrap: break-word;
+  word-break: break-all;
+  cursor: default;
+}
+.parameter-wrap .product-parameter-main ul li span {
+  float: left;
+  width: 320px;
+  margin-right: 96px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.parameter-wrap .product-parameter-main ul li .parameter-detail {
+  float: left;
+  width: 438px;
+  color: #999;
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
