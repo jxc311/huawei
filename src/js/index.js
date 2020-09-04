@@ -5,7 +5,7 @@ import './library/jquery.lazyload.js';
 
 
 $("img.lazy").lazyload({
-    placeholder: "images/timg.gif", //用图片提前占位
+    placeholder: "../images/timg.gif", //用图片提前占位
     // placeholder,值为某一图片路径.此图片用来占据将要加载的图片的位置,待图片加载时,占位图则会隐藏
     effect: "fadeIn", // 载入使用何种效果
     // effect(特效),值有show(直接显示),fadeIn(淡入),slideDown(下拉)等,常用fadeIn

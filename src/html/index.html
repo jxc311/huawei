@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/public.css">
     <script src="../js/index.js" type="module"></script>
+    <script src="../js/library/slideshow.js" type="module"></script>
 </head>
 
 <body>
@@ -38,13 +39,13 @@
             </div>
             <div class="top_r">
                 <ul>
-                    <li><a href="#">请登陆</a></li>
-                    <li><a href="#">注册</a></li>
+                    <li><a href="./denglu.html">请登陆</a></li>
+                    <li><a href="./zhuce.html">注册</a></li>
                     <li><a href="#">我的订单</a></li>
                     <li class="top_red"><a href="#" class="red1">客户服务</a></li>
                     <li class="top_red"><a href="#" class="red1">网站导航</a></li>
                     <li class="top_red"><a href="#" class="red1">手机版</a></li>
-                    <li class="top_red"><a href="#" class="red1">购物车</a></li>
+                    <li class="top_red"><a href="./shopcar.html" class="red1">购物车</a></li>
                 </ul>
             </div>
         </div>
@@ -82,7 +83,8 @@
 
     <!-- banner -->
     <div class="banner-wrap">
-        <div class="banner-show">
+        <!-- 轮播图 -->
+        <!-- <div class="banner-show">
             <ul>
                 <li class="banner1">
                     <div>
@@ -115,20 +117,739 @@
                     </div>
                 </li>
             </ul>
+            <div class="banner_lb">
+                <div class="lb-dd">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="" class="prev">
+                    <</a>
+                        <a href="" class="next">></a>
+            </div>
+        </div> -->
+        <div class="sliders">
+            <div class="img-box">
+                <img src="../images/banner1.jpg" alt="" class="active">
+                <img src="../images/banner2.jpg" alt="">
+                <img src="../images/banner3.jpg" alt="">
+                <img src="../images/banner4.jpg" alt="">
+                <img src="../images/banner5.jpg" alt="">
+                <img src="../images/banner6.jpg" alt="">
+            </div>
+            <div class="btn-left btn">
+                <span>&lt;</span>
+            </div>
+
+            <div class="btn-right btn">
+                <span>&gt;</span>
+            </div>
+            <ol>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
         </div>
+
         <!-- 菜单 -->
         <div class="naver1">
             <ul class="naver1-cd">
-                <li><a href="#">手机</a></li>
-                <li><a href="#">笔记本</a></li>
-                <li><a href="#">平板</a></li>
-                <li><a href="#">智能穿戴&VR</a></li>
-                <li><a href="#">智能家居</a></li>
-                <li><a href="#">智能屏</a></li>
-                <li><a href="#">耳机音箱</a></li>
-                <li><a href="#">配件</a></li>
-                <li><a href="#">生态产品</a></li>
-                <li><a href="#">增值服务&其他</a></li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">手机</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">笔记本</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">平板</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">智能穿戴&VR</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">智能家居</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">智能屏</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">耳机音箱</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">配件</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">生态产品</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cd-li">
+                    <div class="naver1-hover"><a href="#" class="naver1_h-a">增值服务&其他</a><span class="h-span">&gt;</span></div>
+                    <div class="n-after">
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="n-a_ul">
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                            <li class="n-a_li">
+                                <a href="#" class="a-img">
+                                    <img src="../images/naver1-small.png" alt="">
+                                    <p><span>HUAWEI P系列</span></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -142,9 +863,9 @@
                     <div class="wb">
                         <div class="t">
                             <span>您好！请</span>
-                            <a href="">登录</a>
+                            <a href="./denglu.html">登录</a>
                             <span>/</span>
-                            <a href="">注册</a>
+                            <a href="./zhuce.html">注册</a>
                         </div>
                         <div class="b">
                             <a href="" class="xrfl">新人福利</a>

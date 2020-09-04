@@ -69,34 +69,34 @@
 #container > #center > #zhuti > #zhuce > div > span {
   margin: 0 12.8px;
 }
-#container > #center > #zhuti > #subject {
+#container > #center > #zhuti > #myform {
   width: 768px;
   height: 632.86px;
   padding-top: 48px;
   padding-left: 208px;
   margin: 0 auto;
 }
-#container > #center > #zhuti > #subject > #head {
+#container > #center > #zhuti > #myform > #head {
   width: 352px;
   height: 57.39px;
   margin: 8px 0 48px;
   text-align: center;
   background: #fff;
 }
-#container > #center > #zhuti > #subject > #head > p {
+#container > #center > #zhuti > #myform > #head > p {
   font-size: 25px;
   color: #000;
 }
-#container > #center > #zhuti > #subject > #head > span {
+#container > #center > #zhuti > #myform > #head > span {
   font-size: 14px;
   color: #191919;
 }
-#container > #center > #zhuti > #subject > #head > a {
+#container > #center > #zhuti > #myform > #head > a {
   font-size: 14px;
   color: #007dff;
   text-decoration: none;
 }
-#container > #center > #zhuti > #subject > div {
+#container > #center > #zhuti > #myform > div {
   width: 354px;
   height: 40px;
   background: rgba(0, 0, 0, 0.05);
@@ -104,29 +104,29 @@
   border-radius: 6.4px;
   font-size: 12px;
 }
-#container > #center > #zhuti > #subject > div > div {
+#container > #center > #zhuti > #myform > div > div {
   display: inline-block;
   text-align: center;
   line-height: 40px;
   padding: 0 12.8px;
   color: #191919;
 }
-#container > #center > #zhuti > #subject > div > div > span {
+#container > #center > #zhuti > #myform > div > div > span {
   display: inline-block;
   transform: rotate(90deg);
 }
-#container > #center > #zhuti > #subject > #country {
+#container > #center > #zhuti > #myform > #country {
   position: relative;
 }
-#container > #center > #zhuti > #subject > #country > div:nth-child(2) {
+#container > #center > #zhuti > #myform > #country > div:nth-child(2) {
   position: absolute;
   right: 12.8px;
   cursor: pointer;
 }
-#container > #center > #zhuti > #subject > #num > div {
+#container > #center > #zhuti > #myform > #phone > div {
   border-right: 1px solid #aaa;
 }
-#container > #center > #zhuti > #subject > #num > input {
+#container > #center > #zhuti > #myform > #phone > input {
   width: 243px;
   height: 38px;
   outline: none;
@@ -134,7 +134,7 @@
   border: none;
   color: #191919;
 }
-#container > #center > #zhuti > #subject > #node > input {
+#container > #center > #zhuti > #myform > #node > input {
   width: 260px;
   height: 38px;
   padding: 0 12.8px;
@@ -143,12 +143,12 @@
   border: none;
   color: #191919;
 }
-#container > #center > #zhuti > #subject > #node > div {
+#container > #center > #zhuti > #myform > #node > div {
   cursor: pointer;
   color: #007dff;
 }
-#container > #center > #zhuti > #subject > #password > input,
-#container > #center > #zhuti > #subject #quedin > input {
+#container > #center > #zhuti > #myform > #password > input,
+#container > #center > #zhuti > #myform #queren > input {
   width: 330px;
   height: 38px;
   padding: 0 12.8px;
@@ -157,26 +157,22 @@
   border: none;
   color: #191919;
 }
-#container > #center > #zhuti > #subject > #password > svg,
-#container > #center > #zhuti > #subject #quedin > svg {
-  cursor: pointer;
-}
-#container > #center > #zhuti > #subject > #birthday {
+#container > #center > #zhuti > #myform > #birthday {
   position: relative;
 }
-#container > #center > #zhuti > #subject > #birthday > div:nth-child(2) {
+#container > #center > #zhuti > #myform > #birthday > div:nth-child(2) {
   position: absolute;
   right: 12.8px;
   cursor: pointer;
 }
-#container > #center > #zhuti > #subject > #hwid {
+#container > #center > #zhuti > #myform > #hwid {
   width: 352px;
   height: 40px;
   margin-top: 40px;
   text-align: center;
   background: #fff;
 }
-#container > #center > #zhuti > #subject > #hwid > button {
+#container > #center > #zhuti > #myform > #hwid > #btn {
   width: 248px;
   height: 40px;
   padding: 0 12.8px;

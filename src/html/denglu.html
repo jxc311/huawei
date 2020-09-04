@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/denglu.css">
-    <script src="../styles/font_z5fxqug54ji/iconfont.js"></script>
+    <script src="../js/zc.js"></script>
 </head>
 
 <body>
@@ -33,25 +33,25 @@
                 <!-- 二维码 -->
                 <div id="code">
                     <div>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAK1ElEQVR4Xu2d0VrrQAiE6/s/tOerWpvkAP8Am2otXtpkw8IwDCRN3y6Xy/tlwd/7+//LvL29SStb53onbte8naf+77rm7djtNa3/keGdc7y1yYfWfslO+vwaoQHAF1ArQKyc8ysBkNnIbQOUeduNdte/rUWZG2U4ZQMFhvZr2eb5QGVH63zLjszetud/M0A3QERP3fUHAJdLVPIGAF8eGAZgKCADED2pSFQp06O0TjCJjtlN/x9RWXMV812tUUWvtTfPdrMEDABseAwAvvyiIrGC/q3rqdWKPvdA3LFdZbRtu5lhmlXM+qMM0FWoA4D7rGJL+5ZfvLIwANgMfI7OGAbYA+xhGiBq42heQJokg/gMJSvHerqgMtVTSyaVoow/BgBKlINjBgAHYejVqmEAu7ZXNNPpDKAmRcYQVeESgFR6y2TmbU2aR6wsVVGJoFJQAY3n14ePgjPGq7VfvT/gqeoBgJryQi2kLKoE61FrPuo62zlB1x/d0C2/HfyMTqTyFI2kqdSc7Y8BwGZGTpnlDU5eGgDvpDgaECORqN5CpizKmBhtV9UcpCU8wVVxdUYzZfzwrXsGAHe3vSQAKo+EUeZaPb+FTsvhlCV0TiaIUcbQJE9tRytZ6bWbp2iRAYAdogFAsuWjjBgGqHGB2iaWuxGLAYji1SkWCRh64qeThRXhSE6kKSWVrxoENI2SsX23jwHA3R0ZJ5IW6QZbZUxLb1HiDQCc6Lw0ADL0paJfRaKn3KkERAMcujbNKCiDyTbqhKJuJQPE737e+RYWlfPSzaABwP0J3aou+DUAuA2CKGMoI6hm0bg1QjKxE2UzKWmyPaqzXraqXRHNLVTbiUVdUTwAsKFNLEcdzADg8GDmMIBeNjKTwIoG2LGKxQCE3kr9itYk+vLqbAVUHeFYrfcUpGOJyfiDSjMy2QCg9qVLcqyqK6xs/xEAEJIs9GcEELFK5DBPBFp12Mq2bsum2kZCugIaYh1qN8kfb5XbwRUBNADYPxWsBm4AcHjih5iIEN9pN+naf4YBImq9OoF616icZMqGSt2eao7soNkB1WaasFFJrdxQU1kjszezBAwA9uFTOwcKOgFVLa3dwdiOySwNMAB4QQAQbWRQF1EVXScjFs/sAkixU5JEWuP6mcoqVAbVWYgnJr9LAAVmALCf5P0ZANweCFFvOngisIPUinr26ikFJqqzFZCTHdXP1W5F3a+nT8Kvh9MARhU1KymPSoTqkAzgic6tkqeWkIwPo+tkYrUrB8MA9utjLaBR+0stbubzhzGAOglcRdOZzDizrFiiiLKoEkBPfEVM5vk6AiDZ5paAAQAzwBn9+QBg4wEPvcMAdueh6iBlMBXeDMrQvtqPUgkgyiSqIzvU2QGJM6tGq4BdtUeX1sXX9H90dFEJGAB8ujhqDys++pUAIIVLtHNGq6QqcZUVPhAf/DZAxgdqtmcAoraTCrUf1/L2Zk4C1QuQEwg0mXKQbYs8Ch8A7KMyANj44yUZQP16OGU7jVFV0dTtz6kUWSLRol4qP7RftXVU2Za0COkKVzAOAO6uUYOqBONpAFDpAtQbKl0BRNkcZQ/NFkh/0N1REmwqY5KPKLMJtMS8pTZwAGCzBgWTQEXBJNBGCeGOl4cB9GBSAJ4SANELIoh+SMCo/Xnm5oeaJXRtsp1a2E558jREpguplD9T2A4AdChQXddXqn1PUF0/A37zVbGrNkqGqHP77caHARgG5Pcds0dPBXuXUmfjVuCojlL/zduPj1BtV5OAug2vjEbrZ9YklU/+DL8XMADYe4DAWxGBFkAeCgD1kTC1hSEnkLDM0FfUi5MT1f0Q49B+SeBadnZtV5n3epz8UKjqMHLIAODTA51ZCsViAOC8Qn7bfpETSWyqtfdpGICUtprZKzccUTwFMyO+KsG0bKN6nmE/1SY6zmKanR2VOUBFSVcobwDAvyLaBkD0ipiKICPRVPmcRBG1OpVrWudQa0j+ygi+js1kx44BBgC6qwcAuq+WHjkMkHNnigE6cwASNaqwJINJkdNNFDVzaR11P1uBSqFbdc1Mkmyv2ZoDDAD24VU7pYzfVNANAIJUGwbwgVq6G2jdxaO+OGpXPBqsBK5yjqr4KXOpVNH5FTssv1LZ2dnRmQPQzRFqzyIgeXW0MsGjcyqOr+z9aQBgZXNlw1QTcUoVfIvnamN0vnptRbCpQo36/EpCEKtEAzaPCXZ2Ro+Fr1TnETV7m+wAZADgF4IBgPMqe89lL8cAJKQyIiM61tIARHlUR8l29ZrEIETnpCvUeyN0ncp+2yJwAGB7gJiCNAKVvKiT8hKDhLb8tvBKRlC2VrLEWpOyYHsOOUQVwJQEZNMqTZQBnQWgAYATSRLAAwDywOFzQmqUeZUugYZLZM9LA4BqUWUmoNYvEj1q2bBo//o/tW9WxahXGslHFTsqcw+M5aq3hXcdFhFKN1tV8eWBRrWNWKNrxwCgWK+7jv/TAIieB/A2Xsn2iLozGU4lglR+NAdYqRtUO+k4VWpVdNJHSRwA2O/u77aOFNgoiSghSAeprfIOAJkNU5ZFqFXZwxNs1uYoS6gntzqQjBMjgXtGMCsA8HwUPg/QpcSMoVHGEL0NAPyXWRIABwAb9BDQiL2slpACkEmSaC2yPcUAlYyyaFBdh3rpTHtFdqwSgVRWqExWNIB6jmqbqwHUwJHQUdcZAOw9RaWX/D4ACH7cchjg8Ar6zhtCqL6pNZPqV/VzVVjS2FZV+anMM17pHoFz2xVlOjbSGK03hAwA+MubVN4omKr+oVhY1/kAVee7gWRcVwOQoKP1o/6esj7jUMoyqtlHOzOgsfbonW/aMQC4u6ULaC/LBgBOqlLNGwbo/2YQ6jCLAfCk4DdpKItIKKm07tY047sEROfqfsn2VXsn0UtMQ/vdnh/+drAXDHUiRXX2jAxXH7QgJ+6cJP7MzJ8BQEfUkBMyqrcDEMqijJ2R0KJ1KnZ4a6olkzTHbv1IBHazhKhI3RCtkwFshSEGAPDTaR/9ZKP2UtsyAPiEoJowKQZQvxuYWTQ6tkKZ1BerIi4jMEnwZVhHLWVWgDM2q8fuYjAAsN02AEjQ/paeqHMYBvDz9EcYQP31cJVeKvW62tOrNZE0hkXRFQYg0dxti6NSR353u5EBwD1sBBRy8lMCQP3dQGIANRtJTNKcgD4nGo3spACT2KS9Ufnr+JgeIvE+N58JJEMiBUxZRE6iANPnA4C9h8kfAwCnv660eQTuX80AK+ktK6po9FlhpO05KitRCSBQWNeha3c/z/r62LGZ3wxSHd41nqaHFVBmsvB47ADgyyPkCFVIraI8yuYMEFVwUxtIopfATWxiZXbFdrKj9d3ADOURqCoOoSCscmJEs5kxNfmAQDcAcF7vNgxgK//rf3+UAayWzaJzd0p1wptCI4eQ5qAMpv16pez2f2KAM0rvqSWAHGIFYxVAKtQ8AFgsAgcAftWu3Bd4OgYgSouoz3NdRnhGoilD5ypFqyItc5zaSdFxbpntvCGkEgwV+QOATw9QYC1wZny8fBBEmUUbsj7PnEPZRbpDbR2pBaXr0OfWPsi3KqNu1xkAOIghZw8AhJ6chjtEVdTDqojPdBYvywBEnfQ53XaMwJAZ5FA5IFBQZncEn2qb2h0dNUBUFqot7Km3gyugoc5BdTINl1TbLPbwzlVtGwB8eYDqqEXHqpMHAHuYesz3Dwdwx4vCvkK+AAAAAElFTkSuQmCC"
-                            alt="">
+                        <img src="../images/ewm.png" alt="">
                     </div>
                     <span>若您使用华为手机，请进入“设置“ > “华为账号“扫码登陆</span>
                 </div>
                 <!-- 中间竖线 -->
                 <span></span>
                 <!-- 登陆框 -->
-                <form action="">
-                    <input type="text" id="zhanghao" placeholder="手机号/邮件地址/华为号">
-                    <input type="text" id="mima" placeholder="密码">
+                <form action="../../interface/login.php" method="post">
+                    <input type="text" id="users_phone" placeholder="请输入手机号" name="users_phone">
+                    <input type="text" id="users_password" placeholder="密码" name="users_password">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-yincangmima1"></use>
                       </svg>
                     <a href="javascript:;">短信验证码登陆</a>
                     <!-- 登陆按钮 -->
-                    <a href="javascript:;" id="denglu">
+                    <!-- <a href="javascript:;" id="denglu">
                         <div>登陆</div>
-                    </a>
+                    </a> -->
+                    <input type="submit" value="登陆" id="denglu">
                 </form>
                 <!-- 注册 忘记密码 遇到问题 -->
                 <div id="zhuce">

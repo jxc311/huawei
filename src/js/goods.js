@@ -1,7 +1,7 @@
 import $ from './library/jquery.js';
 import { cookie } from './library/cookie.js';
 
-(function() {
+let product = function() {
     let id = location.search.split('=')[1]; // 获取id
 
 
@@ -13,18 +13,9 @@ import { cookie } from './library/cookie.js';
         },
         dataType: "json",
         success: function(res) {
+
             let picture = JSON.parse(res.img);
 
-            let template = `<div id="gsCount">
-                <input type="number" id="Count" value="1" min="1" max="${res.num}">
-                <div id="add" class="no-l">
-                    <a href="#">+</a>
-                </div>
-                <div id="reduce" class="no-l">
-                    <a href="#">-</a>
-                </div>
-            </div>
-            <a href="./shopcar.html" id="addgwc">加入购物车</a>`
 
             $('#urlname').html(res.title);
             $('#spname').html(res.title);
@@ -43,9 +34,6 @@ import { cookie } from './library/cookie.js';
                 $('.bigpicture').css('background', this.style.background);
             });
 
-            $('#gwcID').append(template).find('#addgwc').on('click', function() {
-                addItem(res.id, res.price, $('#Count').val());
-            });
 
         }
     });
@@ -81,4 +69,6 @@ import { cookie } from './library/cookie.js';
 
         cookie.set('shop', JSON.stringify(shop), 1);
     }
-})();
+};
+export default product;
+product()

@@ -1,0 +1,439 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  background: #f9f9f9;
+}
+#container #head {
+  width: 100%;
+  height: 36px;
+}
+#container #head > #layout {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#container #head > #layout > ul {
+  list-style: none;
+}
+#container #head > #layout > ul > li {
+  height: 36px;
+  float: left;
+  text-align: center;
+  line-height: 36px;
+}
+#container #head > #layout > ul > li > a {
+  display: inline-block;
+  height: 12px;
+  padding: 0 8px;
+  text-align: center;
+  line-height: 12px;
+  text-decoration: none;
+  color: #a4a4a4;
+  font-size: 12px;
+  border-right: 1px #6f6f6f solid;
+}
+#container #head > #layout > ul > li > a > span {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+#container #head > #layout > ul > li:first-child > a {
+  padding-left: 0;
+}
+#container #head > #layout > ul > li:last-child > a {
+  border-right: none;
+}
+#container #head > #layout > ul:nth-child(2) {
+  position: absolute;
+  right: 0;
+}
+#container #title {
+  width: 100%;
+  height: 70px;
+  padding: 10px 0;
+  background: #fff;
+}
+#container #title > #center {
+  width: 1200px;
+  height: 52px;
+  margin: 0 auto;
+  position: relative;
+}
+#container #title > #center > #logo {
+  width: 290px;
+  height: 49px;
+  float: left;
+}
+#container #title > #center > #logo > a {
+  float: left;
+  width: 120px;
+  height: 41px;
+  margin-top: 8px;
+}
+#container #title > #center > #logo > a > img {
+  width: 100%;
+  height: 36px;
+}
+#container #title > #center > #logo > span {
+  float: left;
+  width: 110px;
+  height: 26px;
+  font-size: 22px;
+  margin-top: 8px;
+  margin-left: 26px;
+  color: #3a3a3a;
+}
+#container #title > #center > #right {
+  width: 320px;
+  height: 50px;
+  margin-top: 2px;
+  float: right;
+  background: url(../images/shopping.jpg) no-repeat;
+}
+#container > #commdity {
+  width: 1200px;
+  height: 40px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-left: 80px;
+}
+#container > #commdity > div {
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  color: #a4a4a4;
+  line-height: 40px;
+  text-align: left;
+}
+#container > #commdity > div > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #a4a4a4;
+}
+#container > #commdity > div:first-child {
+  width: 150px;
+}
+#container > #commdity > div:nth-child(2) {
+  width: 450px;
+}
+#container > #commdity > div:nth-child(3) {
+  width: 50px;
+}
+#container > #commdity > div:nth-child(4) {
+  width: 90px;
+}
+#container > #commdity > div:nth-child(5) {
+  width: 140px;
+}
+#container > #content {
+  width: 1200px;
+  min-height: 50px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#container > #content .itemlist {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+#container > #content .itemlist .item {
+  border: 1px solid #ccc;
+  margin: 20px;
+  overflow: hidden;
+}
+#container > #content .itemlist .item div {
+  float: left;
+  margin: 10px;
+}
+#container > #content .itemlist .item div > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #a4a4a4;
+}
+#container > #content .itemlist .p-img {
+  width: 100px;
+  height: 100%;
+}
+#container > #content .itemlist .p-img > img {
+  width: 100%;
+  height: 100%;
+}
+#container > #delete {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 10px;
+  padding-left: 80px;
+  position: relative;
+}
+#container > #delete > div {
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  color: #3a3a3a;
+  line-height: 60px;
+  text-align: left;
+}
+#container > #delete > div > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #3a3a3a;
+}
+#container > #delete > div:first-child > a {
+  margin-left: 20px;
+}
+#container > #delete > :last-child {
+  float: right;
+  width: 180px;
+  height: 100%;
+  background: #ca151e;
+}
+#container > #delete > :last-child > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+#container > #delete > div:nth-child(2) {
+  position: absolute;
+  right: 180px;
+  width: 220px;
+  height: 45px;
+  padding-right: 30px;
+  margin-top: 7px;
+}
+#container > #delete > div:nth-child(2) > p {
+  width: 190px;
+  height: 27px;
+  text-align: right;
+  line-height: 27px;
+}
+#container > #delete > div:nth-child(2) > p > label {
+  font-size: 14px;
+  color: #3a3a3a;
+}
+#container > #delete > div:nth-child(2) > p > span {
+  color: #ca151e;
+  font-size: 18px;
+  font-weight: 700;
+}
+#container > #delete > div:nth-child(2) > .discounts {
+  width: 190px;
+  height: 18px;
+  font-size: 12px;
+  color: #a4a4a4;
+  line-height: 18px;
+}
+#container > #base {
+  width: 100%;
+  background: #f9f9f9;
+}
+#container > #base > #first {
+  width: 1200px;
+  height: 82px;
+  margin: 0 auto;
+  padding-top: 22px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#container > #base > #first > ul {
+  width: 100%;
+  height: 40px;
+}
+#container > #base > #first > ul > li {
+  float: left;
+  list-style: none;
+  font-size: 18px;
+  padding-right: 120px;
+  padding-left: 40px;
+  height: 40px;
+  text-align: center;
+}
+#container > #base > #first > ul > li > a {
+  display: inline-block;
+  color: #3a3a3a;
+  text-decoration: none;
+  height: 40px;
+  text-align: center;
+}
+#container > #base > #first > ul > li:nth-child(4) {
+  padding-right: 0;
+}
+#container > #base > #tow {
+  width: 1200px;
+  height: 211px;
+  margin: 0 auto;
+  padding-top: 23px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#container > #base > #tow > #left {
+  float: left;
+  width: 920px;
+  height: 155px;
+  padding-top: 5px;
+  border-right: 1px solid #e5e5e5;
+}
+#container > #base > #tow > #left > ul {
+  width: 16.66667%;
+  float: left;
+}
+#container > #base > #tow > #left > ul > p {
+  width: 100%;
+  height: 28px;
+  font-size: 14px;
+  color: #333;
+  padding-bottom: 7px;
+}
+#container > #base > #tow > #left > ul > li {
+  width: 100%;
+  height: 22px;
+  float: left;
+  list-style: none;
+}
+#container > #base > #tow > #left > ul > li > a {
+  display: inline-block;
+  height: 14px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 12px;
+  color: #777;
+  text-decoration: none;
+}
+#container > #base > #tow > #left > ul > li > a:hover {
+  color: #d0021b;
+}
+#container > #base > #tow > #right {
+  float: right;
+  width: 278px;
+  height: 160px;
+  margin-top: 2px;
+}
+#container > #base > #tow > #right > p:first-child {
+  width: 100%;
+  height: 36px;
+  font-size: 24px;
+  color: #575757;
+  text-align: center;
+  line-height: 36px ;
+}
+#container > #base > #tow > #right > p:nth-child(2) {
+  width: 1005;
+  height: 22px;
+  font-size: 14px;
+  color: #575757;
+  text-align: center;
+  line-height: 22px;
+}
+#container > #base > #tow > #right > #service {
+  width: 100%;
+  height: 34px;
+}
+#container > #base > #tow > #right > #service > a {
+  display: inline-block;
+  width: 170px;
+  height: 100%;
+  font-size: 14px;
+  color: #fff;
+  background: #333;
+  margin: 10px 54.5px 0;
+  border-radius: 17px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 34px;
+}
+#container > #base > #tow > #right > #attention {
+  width: 250px;
+  height: 24px;
+  margin-top: 26px;
+  margin-left: 40px;
+}
+#container > #base > #there {
+  width: 1200px;
+  height: 114px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+#container > #base > #there > #content {
+  width: 100%;
+  height: 61px;
+}
+#container > #base > #there > #content > p:first-child {
+  width: 82px;
+  height: 20px;
+  float: left;
+  padding-top: 3px;
+  padding-right: 20px;
+}
+#container > #base > #there > #content > p:first-child > a {
+  display: inline-block;
+  width: 100%;
+  height: 100;
+}
+#container > #base > #there > #content > p:first-child > a > img {
+  width: 100%;
+  height: 100%;
+}
+#container > #base > #there > #content > #word {
+  height: 100%;
+  float: left;
+}
+#container > #base > #there > #content > #word > ul {
+  height: 12px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+#container > #base > #there > #content > #word > ul > li {
+  float: left;
+  line-height: 1;
+  padding-right: 6px;
+  border-right: 1px solid #d3d3d3;
+  margin-right: 6px;
+  list-style: none;
+}
+#container > #base > #there > #content > #word > ul > li > a {
+  font-size: 12px;
+  color: #777;
+  text-decoration: none;
+}
+#container > #base > #there > #content > #word > ul > li > a:hover {
+  color: #d0021b;
+}
+#container > #base > #there > #content > #word > ul > li:last-child {
+  border: none;
+}
+#container > #base > #there > #content > #word > #characters {
+  font-size: 12px;
+  color: #a4a4a4;
+}
+#container > #base > #there > #content > #word > #characters > a {
+  font-size: 12px;
+  color: #a4a4a4;
+  text-decoration: none;
+}
+#container > #base > #there > #content > #word > #characters > a:hover {
+  color: #d0021b;
+}
+#container > #base > #there > #content > p:last-child {
+  float: right;
+  width: 87px;
+  height: 24px;
+}
+#container > #base > #there > #content > p:last-child > a {
+  display: inline-block;
+  width: 70px;
+  height: 100%;
+  margin-left: 17px;
+}
